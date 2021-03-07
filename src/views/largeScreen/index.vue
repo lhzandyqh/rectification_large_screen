@@ -983,6 +983,17 @@ export default {
         xAxis: {
           type: 'category',
           data: ['生均占地面积', '生均教学行政用房', '生均宿舍面积', '生均实践场所']
+        //   axisLabel: {// 坐标轴刻度标签的相关设置。
+        //     clickable: true, // 并给图表添加单击事件  根据返回值判断点击的是哪里
+        //     interval: 0,
+        //     formatter: function(params, index) {
+        //       if (index % 2 !== 0) {
+        //         return '\n\n' + params
+        //       } else {
+        //         return params
+        //       }
+        //     }
+        //   }
         },
         tooltip: {
           trigger: 'axis'

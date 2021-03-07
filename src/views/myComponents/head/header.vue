@@ -23,12 +23,12 @@
       <div class="goset">
         <img src="../../../assets/icon/goSet.png" @click="gotoManagementPlatform">
       </div>
-      <div class="layer_container_right">
+      <div class="layer_container_right" @click="gotoStudentLayer">
         <div class="layer_content_right">
           <span>学生层面</span>
         </div>
       </div>
-      <div class="layer_container_right">
+      <div class="layer_container_right" @click="gotoTeacherLayer">
         <div class="layer_content_right">
           <span>教师层面</span>
         </div>
@@ -52,6 +52,12 @@ export default {
     },
     gotoCourseLayer: function() {
       this.$router.push('/courseindex')
+    },
+    gotoTeacherLayer: function() {
+      this.$router.push('teacherindex')
+    },
+    gotoStudentLayer: function() {
+      this.$router.push('studentindex')
     }
   }
 }
@@ -134,6 +140,7 @@ export default {
   color: white;
 }
 .layer_container_right {
+  text-align: center;
   cursor: pointer;
   width: 8%;
   height: 3rem;
@@ -142,6 +149,15 @@ export default {
   transform: skewX(-40deg);
   margin-right: 2rem;
   margin-top: 0.6rem;
+}
+.layer_container_right :hover {
+  /*/*text-align: center;*/
+  /*width: 100%;*/
+  /*height: 3rem;*/
+  box-shadow:0rem 0rem 0.2rem 0.2rem #b1dde8;
+  transform: skewX(0deg);
+  background-color: #44a5fc;
+  color: white;
 }
 .layer_content_right {
   text-align: center;
@@ -154,8 +170,12 @@ export default {
 }
 .layer_content_right span {
   line-height: 3rem;
-  color: #37afe2;
+  display: block;
+  width: 100%;
+  height: 3rem;
+  /*transform: skewX(-40deg);*/
   font-weight: bold;
+  color:#44a5fc ;
 }
 .goset {
   width: 4%;

@@ -111,6 +111,36 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '',
+    // component: Layout,
+    component: () => import('@/views/largeScreen/teacherIndex'),
+    // redirect: 'majorindex',
+    hidden: true,
+    children: [
+      {
+        path: 'teacherIndex',
+        // component: () => import('@/views/dashboard/index'),
+        name: 'Dashboard',
+        meta: { title: 'dashboard', icon: 'dashboard', noCache: true, affix: true }
+      }
+    ]
+  },
+  {
+    path: '',
+    // component: Layout,
+    component: () => import('@/views/largeScreen/studentIndex'),
+    // redirect: 'majorindex',
+    hidden: true,
+    children: [
+      {
+        path: 'studentIndex',
+        // component: () => import('@/views/dashboard/index'),
+        name: 'Dashboard',
+        meta: { title: 'dashboard', icon: 'dashboard', noCache: true, affix: true }
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [

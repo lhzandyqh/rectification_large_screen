@@ -11,7 +11,7 @@
         <!--          <span>专业层面</span>-->
         <!--        </div>-->
       </div>
-      <div class="pro_layer_container">
+      <div class="layer_container" @click="gotoCourseLayer">
         <span>课程层面</span>
         <!--        <div class="layer_content">-->
         <!--          <span>课程层面</span>-->
@@ -23,7 +23,7 @@
       <div class="goset">
         <img src="../../../assets/icon/goSet.png" @click="gotoManagementPlatform">
       </div>
-      <div class="layer_container_right" @click="gotoStudentLayer">
+      <div class="pro_layer_container_right" @click="gotoStudentLayer">
         <div class="layer_content_right">
           <span>学生层面</span>
         </div>
@@ -99,27 +99,6 @@ export default {
   margin-left: 2rem;
   margin-top: 0.6rem;
 }
-.pro_layer_container {
-  text-align: center;
-  cursor: pointer;
-  width: 8%;
-  height: 3rem;
-  float: left;
-  border: 1px solid #44a5fc;
-  transform: skewX(40deg);
-  margin-left: 2rem;
-  margin-top: 0.6rem;
-  background-color:#44a5fc;
-}
-.pro_layer_container span {
-  line-height: 3rem;
-  display: block;
-  width: 100%;
-  height: 3rem;
-  transform: skewX(-40deg);
-  font-weight: bold;
-  color:white ;
-}
 .layer_container span {
   line-height: 3rem;
   display: block;
@@ -143,13 +122,6 @@ export default {
   font-size: 1.5rem;
   color: #3b91b6;
   font-weight: bold;
-}
-.layer_content {
-  display: block;
-  width: 100%;
-  height: 3rem;
-  text-align: center;
-  transform: skewX(-40deg);
 }
 .layer_container :hover {
   /*/*text-align: center;*/
@@ -198,6 +170,26 @@ export default {
   font-weight: bold;
   color:#44a5fc ;
 }
+.pro_layer_container_right {
+  cursor: pointer;
+  width: 8%;
+  height: 3rem;
+  float: right;
+  border: 1px solid #44a5fc;
+  transform: skewX(-40deg);
+  margin-right: 2rem;
+  margin-top: 0.6rem;
+  background-color:#44a5fc;
+}
+.pro_layer_container_right span {
+  line-height: 3rem;
+  display: block;
+  width: 100%;
+  height: 3rem;
+  /*transform: skewX(-40deg);*/
+  font-weight: bold;
+  color:white ;
+}
 .goset {
   width: 4%;
   margin-right: 2rem;
@@ -216,3 +208,4 @@ export default {
 /*  position: relative;*/
 /*}*/
 </style>
+

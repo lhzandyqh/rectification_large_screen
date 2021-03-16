@@ -13,9 +13,15 @@
               <span>质控点说明</span>
             </div>
             <div class="table_head_two">
-              <span>数值</span>
+              <span>当前值</span>
             </div>
             <div class="table_head_three">
+              <span>目标值</span>
+            </div>
+            <div class="table_head_four">
+              <span>预警值</span>
+            </div>
+            <div class="table_head_five">
               <span>单位</span>
             </div>
           </div>
@@ -30,6 +36,12 @@
                 <span>{{ item.number }}</span>
               </div>
               <div class="DataList_top_three">
+                <span>{{ item.targetNumber }}</span>
+              </div>
+              <div class="DataList_top_four">
+                <span>{{ item.warnNumber }}</span>
+              </div>
+              <div class="DataList_top_five">
                 <span>{{ item.danwei }}</span>
               </div>
             </li>
@@ -55,15 +67,62 @@
           <span>课堂教学</span>
         </div>
         <div class="resource2Chart1">
-          <div class="echart_container">
-            <div id="resource2Chart" style="height: 100%;width: 100%;" />
+          <!--          <div class="echart_container">-->
+          <!--            <div id="resource2Chart" style="height: 100%;width: 100%;" />-->
+          <!--          </div>-->
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/zuoye.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>作业布置次数</span>
+              </div>
+              <div class="number_container">
+                <span>23</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/ceshi.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>随堂测试次数</span>
+              </div>
+              <div class="number_container">
+                <span>35</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/taolun.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>小组讨论次数</span>
+              </div>
+              <div class="number_container">
+                <span>92</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/dayi.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>答疑次数</span>
+              </div>
+              <div class="number_container">
+                <span>156</span>
+              </div>
+            </div>
           </div>
         </div>
-        <!--        <div class="resource2ChartOne">-->
-        <!--          <div class="echart_container">-->
-        <!--            <div id="resource2ChartOne" style="height: 100%;width: 100%;" />-->
-        <!--          </div>-->
-        <!--        </div>-->
         <div class="resource2Chart2">
           <div class="resource2Chart3">
             <div class="echart_container">
@@ -92,13 +151,52 @@
       </div>
       <div class="resource4_container">
         <div class="resource4_title">
-          <div class="triangle-right-four" />
-          <span>招生情况</span>
+          <!--          <div class="triangle-right-four" />-->
+          <!--          <span>招生情况</span>-->
         </div>
         <div class="resource4_chart_container">
-          <div class="resource4Chart">
-            <div class="echart_container">
-              <div id="resource4Chart" style="height: 100%;width: 100%;" />
+          <!--          <div class="resource4Chart">-->
+          <!--            <div class="echart_container">-->
+          <!--              <div id="resource4Chart" style="height: 100%;width: 100%;" />-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <div class="show_card_container_two">
+            <div class="left_icon_container_two">
+              <img src="../../assets/icon/dudao.png">
+            </div>
+            <div class="right_text_container_two">
+              <div class="text_header_two">
+                <span>督导评价得分</span>
+              </div>
+              <div class="number_container_two">
+                <span>82</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container_two">
+            <div class="left_icon_container_two">
+              <img src="../../assets/icon/xueshengpj.png">
+            </div>
+            <div class="right_text_container_two">
+              <div class="text_header_two">
+                <span>学生评价分数</span>
+              </div>
+              <div class="number_container_two">
+                <span>90</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container_two">
+            <div class="left_icon_container_two">
+              <img src="../../assets/icon/zongti.png">
+            </div>
+            <div class="right_text_container_two">
+              <div class="text_header_two">
+                <span>总评平均成绩</span>
+              </div>
+              <div class="number_container_two">
+                <span>88</span>
+              </div>
             </div>
           </div>
         </div>
@@ -122,162 +220,226 @@ export default {
       CardPartsStatisticsList: [
         {
           name: '课程总数',
-          number: '100',
+          number: '67',
+          targetNumber: '100',
+          warnNumber: '45',
           danwei: '个'
         },
         {
           name: '专业核心课程数量',
-          number: '100',
+          number: '32',
+          targetNumber: '45',
+          warnNumber: '20',
           danwei: '个'
         },
         {
           name: '骨干专业数',
-          number: '100',
+          number: '16',
+          targetNumber: '20',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '精品在线开放课程',
-          number: '100',
+          number: '13',
+          targetNumber: '19',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '校企合作联合开发课程',
-          number: '100',
+          number: '6',
+          targetNumber: '15',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '专业综合改革试点数',
-          number: '100',
+          number: '12',
+          targetNumber: '19',
+          warnNumber: '10',
           danwei: '个'
         },
         {
           name: '精品资源共享课',
-          number: '100',
+          number: '10',
+          targetNumber: '20',
+          warnNumber: '4',
           danwei: '个'
         },
         {
           name: '课堂活跃度',
-          number: '100',
+          number: '85',
+          targetNumber: '90',
+          warnNumber: '70',
           danwei: '%'
         },
-        {
-          name: '课程-课堂教学',
-          number: '100',
-          danwei: '个'
-        },
+        // {
+        //   name: '课程-课堂教学',
+        //   number: '35',
+        //   targetNumber: '111',
+        //   warnNumber: '45',
+        //   danwei: '个'
+        // },
         {
           name: '平均成绩增长率',
-          number: '100',
+          number: '53',
+          targetNumber: '45',
+          warnNumber: '15',
           danwei: '%'
         },
         {
           name: '卷面平均成绩',
-          number: '100',
+          number: '78',
+          targetNumber: '90',
+          warnNumber: '60',
           danwei: '分'
         },
         {
           name: '卷面成绩优秀率',
-          number: '100',
+          number: '13',
+          targetNumber: '20',
+          warnNumber: '5',
           danwei: '%'
         },
         {
           name: '教学方法多样性',
-          number: '100',
+          number: '12',
+          targetNumber: '30',
+          warnNumber: '10',
           danwei: '种'
         },
         {
           name: '理论课课程数量',
-          number: '100',
+          number: '35',
+          targetNumber: '30',
+          warnNumber: '40',
           danwei: '个'
         },
         {
           name: '理论课数量占比',
-          number: '100',
+          number: '52',
+          targetNumber: '50',
+          warnNumber: '55',
           danwei: '%'
         },
         {
           name: '实践课课程数量',
-          number: '100',
+          number: '37',
+          targetNumber: '42',
+          warnNumber: '30',
           danwei: '个'
         },
         {
           name: '实践课数量占比',
-          number: '100',
+          number: '48',
+          targetNumber: '55',
+          warnNumber: '45',
           danwei: '%'
         },
         {
           name: '理论课+实践课课程数量',
-          number: '100',
-          danwei: '人'
+          number: '72',
+          targetNumber: '82',
+          warnNumber: '90',
+          danwei: '门'
         },
         {
           name: '理论课+实践课数量占比',
-          number: '100',
-          danwei: '人'
-        },
-        {
-          name: '理论课开课数量',
-          number: '100',
-          danwei: '个'
-        },
-        {
-          name: '理论课开课数量占比',
-          number: '100',
+          number: '80',
+          targetNumber: '75',
+          warnNumber: '60',
           danwei: '%'
         },
-        {
-          name: '实践课开课数量',
-          number: '100',
-          danwei: '个'
-        },
-        {
-          name: '实践课开课数量占比',
-          number: '100',
-          danwei: '%'
-        },
-        {
-          name: '理论课+实践课开课数量',
-          number: '100',
-          danwei: '人'
-        },
-        {
-          name: '理论课+实践课开课数量占比',
-          number: '100',
-          danwei: '%'
-        },
+        // {
+        //   name: '理论课开课数量',
+        //   number: '35',
+        //   targetNumber: '35',
+        //   warnNumber: '30',
+        //   danwei: '门'
+        // },
+        // {
+        //   name: '理论课开课数量占比',
+        //   number: '97',
+        //   targetNumber: '100',
+        //   warnNumber: '45',
+        //   danwei: '%'
+        // },
+        // {
+        //   name: '实践课开课数量',
+        //   number: '34',
+        //   targetNumber: '37',
+        //   warnNumber: '45',
+        //   danwei: '门'
+        // },
+        // {
+        //   name: '实践课开课数量占比',
+        //   number: '96',
+        //   targetNumber: '100',
+        //   warnNumber: '45',
+        //   danwei: '%'
+        // },
+        // {
+        //   name: '理论课+实践课开课数量',
+        //   number: '100',
+        //   targetNumber: '111',
+        //   warnNumber: '45',
+        //   danwei: '人'
+        // },
+        // {
+        //   name: '理论课+实践课开课数量占比',
+        //   number: '100',
+        //   targetNumber: '111',
+        //   warnNumber: '45',
+        //   danwei: '%'
+        // },
         {
           name: '课程组人数（正高级）',
-          number: '100',
+          number: '23',
+          targetNumber: '30',
+          warnNumber: '12',
           danwei: '人'
         },
         {
           name: '课程组人数（副高级）',
-          number: '100',
+          number: '19',
+          targetNumber: '30',
+          warnNumber: '10',
           danwei: '人'
         },
         {
           name: '课程组人数（中级）',
-          number: '100',
+          number: '46',
+          targetNumber: '80',
+          warnNumber: '45',
           danwei: '人'
         },
         {
           name: '课程组人数（初级）',
-          number: '100',
+          number: '36',
+          targetNumber: '50',
+          warnNumber: '10',
           danwei: '人'
         },
         {
           name: '实训项目总数',
-          number: '100',
+          number: '12',
+          targetNumber: '20',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '项目开出量',
-          number: '100',
+          number: '28',
+          targetNumber: '30',
+          warnNumber: '10',
           danwei: '个'
         },
         {
           name: '项目开出率',
-          number: '100',
+          number: '96',
+          targetNumber: '100',
+          warnNumber: '45',
           danwei: '%'
         }
       ]
@@ -864,7 +1026,7 @@ export default {
 }
 .table_head_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .table_head_one span {
@@ -874,7 +1036,7 @@ export default {
 }
 .table_head_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .table_head_two span {
@@ -883,8 +1045,26 @@ export default {
 }
 .table_head_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
+}
+.table_head_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_four span {
+  line-height: 2.5rem;
+  color: white;
+}
+.table_head_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_five span {
+  line-height: 2.5rem;
+  color: white;
 }
 .table_head_three span {
   line-height: 2.5rem;
@@ -906,7 +1086,7 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_one span {
@@ -916,26 +1096,46 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .DataList_top_two span {
-  margin-left: 2rem;
+  /*margin-left: -2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
 .DataList_top_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
 }
 .DataList_top_three span {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_four span {
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_five span {
+  /*margin-left: 2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
@@ -997,9 +1197,64 @@ export default {
   border-bottom: 0.5rem solid transparent;
 }
 .resource2Chart1 {
+  /*padding-top: 4%;*/
   width: 100%;
   height: 30%;
-  background-color: #2041e7;
+  /*background-color: pink;*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.show_card_container {
+  width: 22%;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container {
+  float: left;
+  height: 100%;
+  width: 40%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.left_icon_container img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.right_text_container {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header span {
+  color: #48494b;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.number_container {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4dbae7;
 }
 .resource2Chart2 {
   width: 100%;
@@ -1050,7 +1305,7 @@ export default {
   float: left;
   width: 20%;
   height: 100%;
-  background-color: #22b0ea;
+  /*background-color: #22b0ea;*/
 }
 .resource4_title {
   margin-left: 1rem;
@@ -1073,10 +1328,62 @@ export default {
 .resource4_chart_container {
   width: 100%;
   height: 88%;
-  background: #8c939d;
+  /*background: #8c939d;*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .resource4Chart {
   width: 100%;
   height: 100%;
+}
+.show_card_container_two {
+  width: 93%;
+  height: 30%;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container_two {
+  float: left;
+  height: 100%;
+  width: 30%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.left_icon_container_two img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.right_text_container_two {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header_two {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header_two span {
+  color: #48494b;
+  font-weight: bold;
+}
+.number_container_two {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container_two span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4dbae7;
 }
 </style>

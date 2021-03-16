@@ -13,9 +13,15 @@
               <span>质控点说明</span>
             </div>
             <div class="table_head_two">
-              <span>数值</span>
+              <span>当前值</span>
             </div>
             <div class="table_head_three">
+              <span>目标值</span>
+            </div>
+            <div class="table_head_four">
+              <span>预警值</span>
+            </div>
+            <div class="table_head_five">
               <span>单位</span>
             </div>
           </div>
@@ -30,6 +36,12 @@
                 <span>{{ item.number }}</span>
               </div>
               <div class="DataList_top_three">
+                <span>{{ item.targetNumber }}</span>
+              </div>
+              <div class="DataList_top_four">
+                <span>{{ item.warnNumber }}</span>
+              </div>
+              <div class="DataList_top_five">
                 <span>{{ item.danwei }}</span>
               </div>
             </li>
@@ -39,7 +51,7 @@
       <div class="resource_container">
         <div class="resource_title">
           <div class="triangle-right-two" />
-          <span>师资队伍</span>
+          <span>专业总览</span>
         </div>
         <div class="resource1_chart_container">
           <div class="resource1Chart">
@@ -52,10 +64,10 @@
       <div class="resource2_container">
         <div class="resource2_title">
           <div class="triangle-right-three" />
-          <span>专业资源</span>
+          <span>专业教学资源</span>
         </div>
         <div class="resource2_chart_container">
-          <div class="resource2Chart">
+          <div class="resource2Chart" style="margin-top: 15%">
             <div class="echart_container">
               <div id="resource2Chart" style="height: 100%;width: 100%" />
             </div>
@@ -65,12 +77,85 @@
       <div class="resource3_container">
         <div class="resource3_title">
           <div class="triangle-right-four" />
-          <span>未添加内容</span>
+          <span>招生情况</span>
         </div>
         <div class="resource3_chart_container">
-          <div class="resource3Chart">
-            <div class="echart_container">
-              <div id="resource3Chart" style="height: 100%;width: 100%" />
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/shengnei.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>省内生源数量</span>
+              </div>
+              <div class="number_container">
+                <span>56492</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/shengwai.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>省外生源数量</span>
+              </div>
+              <div class="number_container">
+                <span>2349</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/jihua.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>计划招生人数</span>
+              </div>
+              <div class="number_container">
+                <span>43020</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/shiji.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>实际录取人数</span>
+              </div>
+              <div class="number_container">
+                <span>41039</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/diyi.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>第一志愿报到率</span>
+              </div>
+              <div class="number_container">
+                <span>93%</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_card_container">
+            <div class="left_icon_container">
+              <img src="../../assets/icon/zong.png">
+            </div>
+            <div class="right_text_container">
+              <div class="text_header">
+                <span>总报到率</span>
+              </div>
+              <div class="number_container">
+                <span>95%</span>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +163,7 @@
       <div class="resource4_container">
         <div class="resource4_title">
           <div class="triangle-right-five" />
-          <span>招生情况</span>
+          <span>专业培养情况</span>
         </div>
         <div class="resource4_chart_container">
           <div class="resource4ChartOne">
@@ -107,92 +192,128 @@ export default {
       CardPartsStatisticsList: [
         {
           name: '专业总数',
-          number: '100',
+          number: '30',
+          targetNumber: '45',
+          warnNumber: '20',
           danwei: '个'
         },
         {
           name: '国家示范专业数',
-          number: '100',
+          number: '15',
+          targetNumber: '25',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '骨干专业数',
-          number: '100',
+          number: '19',
+          targetNumber: '26',
+          warnNumber: '15',
           danwei: '个'
         },
         {
           name: '一流专业数',
-          number: '100',
+          number: '10',
+          targetNumber: '20',
+          warnNumber: '15',
           danwei: '个'
         },
         {
           name: '重点专业数',
-          number: '100',
+          number: '16',
+          targetNumber: '27',
+          warnNumber: '10',
           danwei: '个'
         },
         {
           name: '专业综合改革试点数',
-          number: '100',
+          number: '12',
+          targetNumber: '19',
+          warnNumber: '10',
           danwei: '个'
         },
         {
           name: '专业教学资源库数量',
-          number: '100',
+          number: '76',
+          targetNumber: '200',
+          warnNumber: '30',
           danwei: '个'
         },
         {
           name: '精品在线开放课程数量',
-          number: '100',
+          number: '12',
+          targetNumber: '40',
+          warnNumber: '10',
           danwei: '个'
         },
         {
           name: '实训基地数量',
-          number: '100',
+          number: '8',
+          targetNumber: '10',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '生均仪器设备值',
-          number: '100',
+          number: '6',
+          targetNumber: '10',
+          warnNumber: '3',
           danwei: '个'
         },
         {
           name: '就业率',
-          number: '100',
+          number: '96',
+          targetNumber: '100',
+          warnNumber: '70',
           danwei: '%'
         },
         {
           name: '正常招生专业数',
-          number: '100',
+          number: '33',
+          targetNumber: '36',
+          warnNumber: '20',
           danwei: '个'
         },
         {
           name: '新增专业数',
-          number: '100',
+          number: '2',
+          targetNumber: '5',
+          warnNumber: '4',
           danwei: '个'
         },
         {
           name: '停招专业数',
-          number: '100',
+          number: '1',
+          targetNumber: '0',
+          warnNumber: '3',
           danwei: '个'
         },
         {
           name: '撤销专业数',
-          number: '100',
+          number: '0',
+          targetNumber: '0',
+          warnNumber: '5',
           danwei: '个'
         },
         {
           name: '3年在校人数总和数',
-          number: '100',
+          number: '22463',
+          targetNumber: '26000',
+          warnNumber: '19600',
           danwei: '人'
         },
         {
           name: '毕业生人数',
-          number: '100',
+          number: '22112',
+          targetNumber: '22463',
+          warnNumber: '21000',
           danwei: '人'
         },
         {
           name: '毕业率',
-          number: '100',
+          number: '96',
+          targetNumber: '99',
+          warnNumber: '90',
           danwei: '%'
         }
       ]
@@ -1324,7 +1445,7 @@ export default {
 }
 .table_head_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .table_head_one span {
@@ -1334,7 +1455,7 @@ export default {
 }
 .table_head_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .table_head_two span {
@@ -1343,8 +1464,26 @@ export default {
 }
 .table_head_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
+}
+.table_head_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_four span {
+  line-height: 2.5rem;
+  color: white;
+}
+.table_head_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_five span {
+  line-height: 2.5rem;
+  color: white;
 }
 .table_head_three span {
   line-height: 2.5rem;
@@ -1366,7 +1505,7 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_one span {
@@ -1376,26 +1515,46 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .DataList_top_two span {
-  margin-left: 2rem;
+  /*margin-left: -2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
 .DataList_top_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
 }
 .DataList_top_three span {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_four span {
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_five span {
+  /*margin-left: 2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
@@ -1469,7 +1628,7 @@ export default {
   float: left;
   width: 30%;
   height: 100%;
-  background-color: skyblue;
+  /*background-color: skyblue;*/
 }
 .resource3_title {
   margin-left: 1rem;
@@ -1492,12 +1651,60 @@ export default {
 .resource3_chart_container {
   width: 100%;
   height: 88%;
-  /*background: #8c939d;*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.resource3Chart {
-  width: 100%;
+.show_card_container {
+  width: 45%;
+  height: 28%;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container {
+  float: left;
   height: 100%;
+  width: 40%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
 }
+.left_icon_container img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.right_text_container {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header span {
+  color: #48494b;
+  font-weight: bold;
+}
+.number_container {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4dbae7;
+}
+
 .resource4_title {
   margin-left: 1rem;
   padding-top: 1rem;
@@ -1530,5 +1737,55 @@ export default {
   width: 70%;
   height: 100%;
   /*background-color: #22b0ea;*/
+}
+
+.show_card_container_two {
+  width: 45%;
+  height: 28%;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container_two {
+  float: left;
+  height: 100%;
+  width: 40%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.left_icon_container_two img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.right_text_container_two {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header_two {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header_two span {
+  color: #48494b;
+  font-weight: bold;
+}
+.number_container_two {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container_two span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4dbae7;
 }
 </style>

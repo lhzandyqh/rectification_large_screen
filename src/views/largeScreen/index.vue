@@ -31,9 +31,15 @@
               <span>质控点说明</span>
             </div>
             <div class="table_head_two">
-              <span>数值</span>
+              <span>当前值</span>
             </div>
             <div class="table_head_three">
+              <span>目标值</span>
+            </div>
+            <div class="table_head_four">
+              <span>预警值</span>
+            </div>
+            <div class="table_head_five">
               <span>单位</span>
             </div>
           </div>
@@ -48,6 +54,12 @@
                 <span>{{ item.number }}</span>
               </div>
               <div class="DataList_top_three">
+                <span>{{ item.targetNumber }}</span>
+              </div>
+              <div class="DataList_top_four">
+                <span>{{ item.warnNumber }}</span>
+              </div>
+              <div class="DataList_top_five">
                 <span>{{ item.danwei }}</span>
               </div>
             </li>
@@ -228,20 +240,61 @@ export default {
       CardPartsStatisticsList: [
         {
           name: '建筑面积',
-          number: '',
+          number: '234522',
+          targetNumber: '260000',
+          warnNumber: '100323',
           danwei: '平米'
         },
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+        { name: '师生比',
+          number: '12',
+          targetNumber: '10',
+          warnNumber: '7',
+          danwei: '%' },
+        { name: '横向技术到款额',
+          number: '103',
+          targetNumber: '111',
+          warnNumber: '45',
+          danwei: '万元' },
+        { name: '纵向技术到款额',
+          number: '200',
+          targetNumber: '150',
+          warnNumber: '100',
+          danwei: '万元' },
+        { name: '生均教学用房面积',
+          number: '45',
+          targetNumber: '60',
+          warnNumber: '23',
+          danwei: '平米' },
+        { name: '生均财政拨水平',
+          number: '1',
+          targetNumber: '1.2',
+          warnNumber: '0.8',
+          danwei: '万元' },
+        // { name: '建筑面积',
+        //   number: '234522',
+        //   targetNumber: '111',
+        //   warnNumber: '100323',
+        //   danwei: '平米' },
+        { name: '多媒体教室数',
+          number: '57',
+          targetNumber: '80',
+          warnNumber: '23',
+          danwei: '间' },
+        { name: '生均图书册数',
+          number: '134',
+          targetNumber: '100',
+          warnNumber: '65',
+          danwei: '册' },
+        { name: '生均仪器设置值',
+          number: '15',
+          targetNumber: '10',
+          warnNumber: '5',
+          danwei: '只' },
+        { name: '新增科研仪器占比',
+          number: '23',
+          targetNumber: '30',
+          warnNumber: '12',
+          danwei: '%' }
       ]
     }
   },
@@ -983,17 +1036,17 @@ export default {
         xAxis: {
           type: 'category',
           data: ['生均占地面积', '生均教学行政用房', '生均宿舍面积', '生均实践场所']
-        //   axisLabel: {// 坐标轴刻度标签的相关设置。
-        //     clickable: true, // 并给图表添加单击事件  根据返回值判断点击的是哪里
-        //     interval: 0,
-        //     formatter: function(params, index) {
-        //       if (index % 2 !== 0) {
-        //         return '\n\n' + params
-        //       } else {
-        //         return params
-        //       }
-        //     }
-        //   }
+          //   axisLabel: {// 坐标轴刻度标签的相关设置。
+          //     clickable: true, // 并给图表添加单击事件  根据返回值判断点击的是哪里
+          //     interval: 0,
+          //     formatter: function(params, index) {
+          //       if (index % 2 !== 0) {
+          //         return '\n\n' + params
+          //       } else {
+          //         return params
+          //       }
+          //     }
+          //   }
         },
         tooltip: {
           trigger: 'axis'
@@ -1138,7 +1191,7 @@ export default {
 }
 .table_head_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .table_head_one span {
@@ -1148,7 +1201,7 @@ export default {
 }
 .table_head_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .table_head_two span {
@@ -1157,8 +1210,26 @@ export default {
 }
 .table_head_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
+}
+.table_head_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_four span {
+  line-height: 2.5rem;
+  color: white;
+}
+.table_head_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_five span {
+  line-height: 2.5rem;
+  color: white;
 }
 .table_head_three span {
   line-height: 2.5rem;
@@ -1180,7 +1251,7 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_one span {
@@ -1190,26 +1261,46 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .DataList_top_two span {
-  margin-left: 2rem;
+  /*margin-left: -2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
 .DataList_top_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
 }
 .DataList_top_three span {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_four span {
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_five span {
+  /*margin-left: 2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }

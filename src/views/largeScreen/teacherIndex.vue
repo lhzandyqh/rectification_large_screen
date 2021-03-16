@@ -13,9 +13,15 @@
               <span>质控点说明</span>
             </div>
             <div class="table_head_two">
-              <span>数值</span>
+              <span>当前值</span>
             </div>
             <div class="table_head_three">
+              <span>目标值</span>
+            </div>
+            <div class="table_head_four">
+              <span>预警值</span>
+            </div>
+            <div class="table_head_five">
               <span>单位</span>
             </div>
           </div>
@@ -30,6 +36,12 @@
                 <span>{{ item.number }}</span>
               </div>
               <div class="DataList_top_three">
+                <span>{{ item.targetNumber }}</span>
+              </div>
+              <div class="DataList_top_four">
+                <span>{{ item.warnNumber }}</span>
+              </div>
+              <div class="DataList_top_five">
                 <span>{{ item.danwei }}</span>
               </div>
             </li>
@@ -50,9 +62,48 @@
         </div>
       </div>
       <div class="resource2_container">
-        <div class="resource2_title">
-          <div class="triangle-right-three" />
-          <span>学生管理能力</span>
+        <!--        <div class="resource2_title">-->
+        <!--          <div class="triangle-right-three" />-->
+        <!--          <span>学生管理能力</span>-->
+        <!--        </div>-->
+        <div class="show_card_container_one">
+          <div class="left_icon_container_one">
+            <img src="../../assets/icon/fudaoyuan2.png">
+          </div>
+          <div class="right_text_container_one">
+            <div class="text_header_one">
+              <span>承担辅导员数量</span>
+            </div>
+            <div class="number_container_one">
+              <span>89</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_card_container_one">
+          <div class="left_icon_container_one">
+            <img src="../../assets/icon/shetuan2.png">
+          </div>
+          <div class="right_text_container_one">
+            <div class="text_header_one">
+              <span>学生社团数量</span>
+            </div>
+            <div class="number_container_one">
+              <span>120</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_card_container_one">
+          <div class="left_icon_container_one">
+            <img src="../../assets/icon/xuesheng2.png">
+          </div>
+          <div class="right_text_container_one">
+            <div class="text_header_one">
+              <span>帮扶学生数量</span>
+            </div>
+            <div class="number_container_one">
+              <span>123</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="resource3_container">
@@ -62,8 +113,96 @@
         </div>
         <div class="resource3_chart_container">
           <div class="resource3Chart1">
-            <div class="echart_container">
-              <div id="resource3ChartOne" style="height: 100%;width: 100%" />
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/kechengshu.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>课程数</span>
+                </div>
+                <div class="number_container_two">
+                  <span>82</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/zhoukeshi.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>周课时</span>
+                </div>
+                <div class="number_container_two">
+                  <span>90</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/banjishu.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>任课班级数</span>
+                </div>
+                <div class="number_container_two">
+                  <span>88</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/xueshengshu.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>任课学生数</span>
+                </div>
+                <div class="number_container_two">
+                  <span>82</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/daokelv.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>学生到课率</span>
+                </div>
+                <div class="number_container_two">
+                  <span>90</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/dudaopingjia.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>督导评价分数</span>
+                </div>
+                <div class="number_container_two">
+                  <span>88</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container_two">
+              <div class="left_icon_container_two">
+                <img src="../../assets/icon/xueshengpingjia.png">
+              </div>
+              <div class="right_text_container_two">
+                <div class="text_header_two">
+                  <span>学生评价分数</span>
+                </div>
+                <div class="number_container_two">
+                  <span>88</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="resource3Chart2">
@@ -80,8 +219,57 @@
         </div>
         <div class="resource4_chart_container">
           <div class="resource4Chart1">
-            <div class="echart_container">
-              <div id="resource4ChartOne" style="height: 100%;width: 100%;" />
+            <div class="show_card_container">
+              <div class="left_icon_container">
+                <img src="../../assets/icon/keti31.png">
+              </div>
+              <div class="right_text_container">
+                <div class="text_header">
+                  <span>主持纵向课题到款额</span>
+                </div>
+                <div class="number_container">
+                  <span>230000</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container">
+              <div class="left_icon_container">
+                <img src="../../assets/icon/keti32.png">
+              </div>
+              <div class="right_text_container">
+                <div class="text_header">
+                  <span>参与纵向课题到款额</span>
+                </div>
+                <div class="number_container">
+                  <span>350000</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container">
+              <div class="left_icon_container">
+                <img src="../../assets/icon/keti33.png">
+              </div>
+              <div class="right_text_container">
+                <div class="text_header">
+                  <span>主持横向课题到款额</span>
+                </div>
+                <div class="number_container">
+                  <span>920000</span>
+                </div>
+              </div>
+            </div>
+            <div class="show_card_container">
+              <div class="left_icon_container">
+                <img src="../../assets/icon/keti34.png">
+              </div>
+              <div class="right_text_container">
+                <div class="text_header">
+                  <span>参与横向课题到款额</span>
+                </div>
+                <div class="number_container">
+                  <span>1560000</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="resource4Chart2">
@@ -115,94 +303,67 @@ export default {
       CardPartsStatisticsList: [
         {
           name: '师资总数',
-          number: '100',
+          number: '167',
+          targetNumber: '200',
+          warnNumber: '120',
           danwei: '人'
         },
         {
           name: '双师素质教师',
-          number: '100',
+          number: '52',
+          targetNumber: '120',
+          warnNumber: '60',
           danwei: '人'
         },
         {
           name: '骨干教师',
-          number: '100',
+          number: '68',
+          targetNumber: '114',
+          warnNumber: '45',
           danwei: '人'
         },
         {
           name: '专业带头人',
-          number: '100',
+          number: '17',
+          targetNumber: '22',
+          warnNumber: '10',
           danwei: '人'
         },
         {
           name: '年度考核平均分',
-          number: '100',
+          number: '89',
+          targetNumber: '95',
+          warnNumber: '70',
           danwei: '分'
         },
         {
           name: '师德考核平均分',
-          number: '100',
+          number: '95',
+          targetNumber: '98',
+          warnNumber: '80',
           danwei: '分'
         },
         {
           name: '督导评价平均分',
-          number: '100',
+          number: '90',
+          targetNumber: '95',
+          warnNumber: '80',
           danwei: '分'
         },
         {
           name: '学生评价平均分',
-          number: '100',
+          number: '96',
+          targetNumber: '95',
+          warnNumber: '80',
           danwei: '分'
         },
         {
           name: '教学事故数',
-          number: '100',
+          number: '1',
+          targetNumber: '0',
+          warnNumber: '2',
           danwei: '次'
         }
-        // {
-        //   name: '生均仪器设备值',
-        //   number: '100',
-        //   danwei: '个'
-        // },
-        // {
-        //   name: '就业率',
-        //   number: '100',
-        //   danwei: '%'
-        // },
-        // {
-        //   name: '正常招生专业数',
-        //   number: '100',
-        //   danwei: '个'
-        // },
-        // {
-        //   name: '新增专业数',
-        //   number: '100',
-        //   danwei: '个'
-        // },
-        // {
-        //   name: '停招专业数',
-        //   number: '100',
-        //   danwei: '个'
-        // },
-        // {
-        //   name: '撤销专业数',
-        //   number: '100',
-        //   danwei: '个'
-        // },
-        // {
-        //   name: '3年在校人数总和数',
-        //   number: '100',
-        //   danwei: '人'
-        // },
-        // {
-        //   name: '毕业生人数',
-        //   number: '100',
-        //   danwei: '人'
-        // },
-        // {
-        //   name: '毕业率',
-        //   number: '100',
-        //   danwei: '%'
-        // }
       ]
     }
   },
@@ -346,7 +507,7 @@ export default {
           i = 0
         }
         this.resource1Chart.setOption(optionArray[i])
-      }, 1000)
+      }, 3000)
     },
     resourceRes1() {
       console.log('资源图1变形')
@@ -704,7 +865,7 @@ export default {
           i = 0
         }
         this.resource4ChartThree.setOption(optionArray[i])
-      }, 1000)
+      }, 3000)
     },
     resourceRes43() {
       console.log('专业资源图变形')
@@ -756,6 +917,16 @@ export default {
   margin-left: 1rem;
   padding-top: 1rem;
 }
+.echart_container {
+  width: 100%;
+  /*height: calc(70vh / 3*2 - 1.8rem);*/
+  height: 100%;
+}
+.cure_title {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
 .cure_container {
   /*display: inline-block;*/
   float: left;
@@ -792,7 +963,7 @@ export default {
 }
 .table_head_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .table_head_one span {
@@ -802,7 +973,7 @@ export default {
 }
 .table_head_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .table_head_two span {
@@ -811,8 +982,26 @@ export default {
 }
 .table_head_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
+}
+.table_head_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_four span {
+  line-height: 2.5rem;
+  color: white;
+}
+.table_head_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.table_head_five span {
+  line-height: 2.5rem;
+  color: white;
 }
 .table_head_three span {
   line-height: 2.5rem;
@@ -834,7 +1023,7 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_one span {
@@ -844,26 +1033,46 @@ export default {
 }
 .DataList_top_one {
   height: 2.5rem;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .DataList_top_two {
   height: 2.5rem;
-  width: 30%;
+  width: 15%;
   float: left;
 }
 .DataList_top_two span {
-  margin-left: 2rem;
+  /*margin-left: -2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
 .DataList_top_three {
   height: 2.5rem;
-  width: 20%;
+  width: 15%;
   float: left;
 }
 .DataList_top_three span {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_four {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_four span {
+  /*margin-left: 2rem;*/
+  line-height: 2.5rem;
+  color: #6c6969;
+}
+.DataList_top_five {
+  height: 2.5rem;
+  width: 15%;
+  float: left;
+}
+.DataList_top_five span {
+  /*margin-left: 2rem;*/
   line-height: 2.5rem;
   color: #6c6969;
 }
@@ -904,7 +1113,7 @@ export default {
   float: left;
   width: 27%;
   height: 100%;
-  background-color: skyblue;
+  /*background-color: skyblue;*/
 }
 .resource2_title {
   margin-left: 1rem;
@@ -921,7 +1130,7 @@ export default {
   height: 0;
   display: inline-block;
   border-top: 0.5rem solid transparent;
-  border-left: 0.8rem solid #e2cd1d;
+  border-left: 0.8rem solid #0a15e5;
   border-bottom: 0.5rem solid transparent;
 }
 .resource2_chart_container {
@@ -954,7 +1163,7 @@ export default {
   height: 0;
   display: inline-block;
   border-top: 0.5rem solid transparent;
-  border-left: 0.8rem solid #e2cd1d;
+  border-left: 0.8rem solid #dd146a;
   border-bottom: 0.5rem solid transparent;
 }
 .resource3_chart_container {
@@ -967,7 +1176,7 @@ export default {
   height: 100%;
   float: left;
   display: inline-block;
-  background: #105fcf;
+  /*background: #105fcf;*/
 }
 .resource3Chart2 {
   width: 70%;
@@ -991,7 +1200,7 @@ export default {
   height: 0;
   display: inline-block;
   border-top: 0.5rem solid transparent;
-  border-left: 0.8rem solid #e21d5b;
+  border-left: 0.8rem solid #0feee6;
   border-bottom: 0.5rem solid transparent;
 }
 .resource4_chart_container {
@@ -1003,7 +1212,7 @@ export default {
   width: 100%;
   height: 30%;
   float: left;
-  background: #1a6adb;
+  /*background: #1a6adb;*/
 }
 .resource4Chart2 {
   width: 70%;
@@ -1022,5 +1231,163 @@ export default {
   width: 60%;
   height: 100%;
   /*background-color: #22b0ea;*/
+}
+.show_card_container_one {
+  width: 90%;
+  height: 31%;
+  border-radius: 1rem;
+  background: white;
+  margin-bottom: 2%;
+  /*margin-top: 3%;*/
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container_one {
+  float: left;
+  height: 100%;
+  width: 30%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.left_icon_container_one img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.right_text_container_one {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header_one {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header_one span {
+  color: #48494b;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.number_container_one {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container_one span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4dbae7;
+}
+.show_card_container_two {
+  float: right;
+  width: 93%;
+  height: 13%;
+  border-radius: 3rem;
+  background: white;
+  margin-bottom: 1%;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container_two {
+  float: left;
+  height: 100%;
+  width: 30%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 3rem 0 0 3rem;
+  text-align: center;
+}
+.left_icon_container_two img {
+  width: 60%;
+  height: 60%;
+  margin-top: 15%;
+}
+.right_text_container_two {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header_two {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 5%;
+}
+.text_header_two span {
+  color: #48494b;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+.number_container_two {
+  text-align: center;
+  margin-top: -2%;
+}
+.number_container_two span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4dbae7;
+}
+.show_card_container {
+  float: left;
+  width: 23%;
+  height: 70%;
+  margin-top: 1.5%;
+  margin-right: 1%;
+  /*display: inline-block;*/
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0.2rem 0.2rem 0.1rem #cecdcd;
+}
+.left_icon_container {
+  float: left;
+  height: 100%;
+  width: 40%;
+  /*background: green;*/
+  background: deepskyblue;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.left_icon_container img {
+  width: 50%;
+  height: 70%;
+  margin-top: 10%;
+}
+.right_text_container {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  /*background-color: pink;*/
+}
+.text_header {
+  width: 100%;
+  height: 40%;
+  /*background-color: #0a76a4;*/
+  text-align: center;
+  margin-top: 10%;
+}
+.text_header span {
+  color: #48494b;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+.number_container {
+  text-align: center;
+  margin-top: -5%;
+}
+.number_container span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4dbae7;
 }
 </style>
